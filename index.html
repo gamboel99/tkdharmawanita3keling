@@ -2,212 +2,12 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TK Dharmawanita III Desa</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --primary: #FF8C00;
-      --secondary: #FFD600;
-      --accent: #FFF8DC;
-      --text: #333;
-      --bg: #FFFDF5;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background-color: var(--primary);
-      padding: 1rem 2rem;
-      flex-wrap: wrap;
-    }
-
-    .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      color: white;
-    }
-
-    .logo-container img {
-      width: 50px;
-      height: 50px;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      padding: 6px 15px;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      background-color: var(--secondary);
-      color: black;
-    }
-
-    .hero {
-      background: linear-gradient(rgba(255, 140, 0, 0.8), rgba(255, 193, 7, 0.8)), 
-                  url('images/hero-bg.jpg') center/cover no-repeat;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    .hero-content h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-
-    .hero-content h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    .hero-content p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      background-color: var(--secondary);
-      color: var(--primary);
-      padding: 12px 30px;
-      border-radius: 30px;
-      font-weight: bold;
-      font-size: 1.1rem;
-      text-decoration: none;
-      display: inline-block;
-      transition: all 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #FFAB00;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .info-section, .berita-section, .galeri-section {
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .info-card, .berita-card, .galeri-item {
-      background: white;
-      margin: 1rem auto;
-      padding: 1rem;
-      border-radius: 15px;
-      max-width: 320px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .info-card i {
-      font-size: 2rem;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    .berita-container, .galeri-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-    }
-
-    .berita-card img,
-    .galeri-item img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .galeri-overlay {
-      background: rgba(255, 140, 0, 0.7);
-      color: white;
-      text-align: center;
-      padding: 0.5rem;
-      margin-top: -40px;
-      border-radius: 0 0 10px 10px;
-      font-weight: 600;
-    }
-
-    .footer {
-      background-color: var(--primary);
-      color: white;
-      padding: 2rem;
-    }
-
-    .footer-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    .footer-section {
-      flex: 1 1 250px;
-      padding: 1rem;
-    }
-
-    .footer-bottom {
-      text-align: center;
-      margin-top: 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.3);
-      padding-top: 1rem;
-      font-size: 0.9rem;
-    }
-
-    .social-media a {
-      color: white;
-      margin-right: 1rem;
-      font-size: 1.2rem;
-    }
-
-    .lihat-semua {
-      display: inline-block;
-      margin-top: 1rem;
-      color: var(--primary);
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .hero h1 {
-        font-size: 2rem;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TK Dharmawanita III Desa Keling</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo-container">
@@ -228,6 +28,9 @@
       <li><a href="alumni.html">Alumni</a></li>
       <li><a href="galeri.html">Galeri</a></li>
     </ul>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
   </nav>
 
   <!-- Hero Section -->
@@ -240,38 +43,59 @@
     </div>
   </section>
 
-</body>
-</html>
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-section">
-      <h3>Kontak Kami</h3>
-      <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Keling, Desa Keling, Kec. Kepung, Kab. Kediri</p>
-      <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
-      <p><i class="fas fa-envelope"></i> tk.dharmawanita3@example.com</p>
+  <!-- Info Section -->
+  <section class="info-section">
+    <div class="info-card">
+      <i class="fas fa-child"></i>
+      <h3>Pendidikan Berkualitas</h3>
+      <p>Metode pembelajaran menyenangkan untuk anak usia dini</p>
     </div>
-    <div class="footer-section">
-      <h3>Jam Operasional</h3>
-      <p>Senin - Jumat: 07.30 - 14.00 WIB</p>
-      <p>Sabtu: 08.00 - 11.00 WIB</p>
-      <div class="social-media">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+    <div class="info-card">
+      <i class="fas fa-users"></i>
+      <h3>Guru Berpengalaman</h3>
+      <p>Tenaga pendidik yang sabar dan profesional</p>
+    </div>
+    <div class="info-card">
+      <i class="fas fa-seedling"></i>
+      <h3>Lingkungan Nyaman</h3>
+      <p>Area bermain yang aman dan fasilitas lengkap</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Kontak Kami</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Jl. Raya Keling, Desa Keling, Kec. Kepung, Kab. Kediri</p>
+        <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+        <p><i class="fas fa-envelope"></i> tk.dharmawanita3@example.com</p>
+      </div>
+      <div class="footer-section">
+        <h3>Jam Operasional</h3>
+        <p>Senin - Jumat: 07.30 - 14.00 WIB</p>
+        <p>Sabtu: 08.00 - 11.00 WIB</p>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Link Cepat</h3>
+        <ul>
+          <li><a href="profil.html">Profil Sekolah</a></li>
+          <li><a href="kegiatan.html">Kegiatan</a></li>
+          <li><a href="pengumuman.html">Pengumuman</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
+        </ul>
       </div>
     </div>
-    <div class="footer-section">
-      <h3>Link Cepat</h3>
-      <ul style="list-style: none; padding: 0;">
-        <li><a href="profil.html" style="color: white;">Profil Sekolah</a></li>
-        <li><a href="kegiatan.html" style="color: white;">Kegiatan</a></li>
-        <li><a href="pengumuman.html" style="color: white;">Pengumuman</a></li>
-        <li><a href="alumni.html" style="color: white;">Alumni</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>&copy; 2025 TK Dharmawanita III Desa Keling. Developed by <a href="#">CV. Mitra Utama Consultindo</a></p>
     </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 TK Dharmawanita III Desa Keling. Developed by <a href="#" style="color: #FFD600;">CV. Mitra Utama Consultindo</a></p>
-  </div>
-</footer>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
