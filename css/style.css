@@ -4,9 +4,9 @@ body {
   margin: 0;
   padding: 0;
   background: url('../images/pattern-batik-anak.jpg') repeat;
-  background-size: 120px;
-  background-color: #FFF9C4;
-  color: #212121;
+  background-size: 140px;
+  background-color: #FFF3E0;
+  color: #4E342E;
   line-height: 1.5;
 }
 
@@ -17,23 +17,23 @@ body {
 }
 
 h1, h2, h3 {
-  color: #E65100;
+  color: #A1887F;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
 }
 
 .section-title {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 30px;
-  color: #FF8F00;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+  color: #FF7043;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.9);
 }
 
 /* Navbar */
 .navbar {
-  background-color: #FFB300;
-  color: #212121;
+  background-color: #FFB74D;
+  color: #3E2723;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,7 +41,7 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .logo-container {
@@ -65,32 +65,32 @@ h1, h2, h3 {
 .nav-links li a {
   text-decoration: none;
   font-weight: bold;
-  color: #212121;
+  color: #3E2723;
   transition: color 0.3s;
 }
 
 .nav-links li a:hover,
 .nav-links li a.active {
-  color: #D84315;
+  color: #FF6F00;
 }
 
 /* Hero */
 .hero {
-  background: linear-gradient(rgba(255, 202, 40, 0.4), rgba(255, 183, 77, 0.4)), url('../images/anak-hero.jpg') center/cover no-repeat;
-  color: #212121;
+  background: linear-gradient(rgba(255, 224, 178, 0.6), rgba(255, 204, 128, 0.6)), url('../images/anak-hero.jpg') center/cover no-repeat;
+  color: #3E2723;
   padding: 60px 20px;
   text-align: center;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.9);
   line-height: 1.3;
 }
 
 .hero h1 {
-  font-size: 2.6rem;
+  font-size: 2.8rem;
   margin-bottom: 10px;
 }
 
 .hero h2 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   margin-bottom: 5px;
 }
 
@@ -100,8 +100,8 @@ h1, h2, h3 {
 }
 
 .btn {
-  background-color: #FFD600;
-  color: #BF360C;
+  background-color: #FFD54F;
+  color: #3E2723;
   padding: 12px 30px;
   border-radius: 30px;
   font-weight: bold;
@@ -112,7 +112,7 @@ h1, h2, h3 {
 }
 
 .btn:hover {
-  background-color: #FF6F00;
+  background-color: #FF8F00;
   color: white;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   transform: translateY(-3px);
@@ -125,7 +125,7 @@ h1, h2, h3 {
   margin-left: 8px;
 }
 
-/* Info Cards */
+/* Fasilitas */
 .fasilitas-container {
   display: flex;
   justify-content: center;
@@ -142,7 +142,7 @@ h1, h2, h3 {
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s, background-color 0.3s;
-  color: #212121;
+  color: #4E342E;
 }
 
 .fasilitas-card:hover {
@@ -153,7 +153,7 @@ h1, h2, h3 {
 .fasilitas-card i {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #F57C00;
+  color: #FF7043;
 }
 
 /* Galeri */
@@ -182,19 +182,19 @@ h1, h2, h3 {
 .overlay {
   position: absolute;
   bottom: 0;
-  background: rgba(255, 87, 34, 0.9);
-  color: #FFFDE7;
+  background: rgba(255, 160, 0, 0.95);
+  color: white;
   width: 100%;
   text-align: center;
-  padding: 12px 0;
+  padding: 10px 0;
   font-weight: bold;
   font-size: 1.1rem;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
 }
 
 /* Berita */
 .berita-card {
-  background-color: #FFE082;
+  background-color: #FFE0B2;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
@@ -208,13 +208,13 @@ h1, h2, h3 {
 }
 
 .berita-card h3 {
-  color: #D84315;
+  color: #BF360C;
   text-shadow: 1px 1px 3px rgba(255,255,255,0.9);
 }
 
 .berita-card p,
 .berita-card .berita-date {
-  color: #BF360C;
+  color: #5D4037;
   font-weight: 500;
   text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
 }
