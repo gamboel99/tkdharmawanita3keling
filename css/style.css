@@ -189,7 +189,7 @@ h1, h2, h3 {
   padding: 12px 0;
   font-weight: bold;
   font-size: 1.15rem;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
 }
 
 /* Berita */
@@ -208,16 +208,17 @@ h1, h2, h3 {
 }
 
 .berita-card h3 {
-  color: #BF360C;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.9);
-  font-size: 1.3rem;
+  color: #D84315;
+  text-shadow: 2px 2px 4px rgba(255,255,255,0.9);
+  font-size: 1.4rem;
 }
 
 .berita-card p,
 .berita-card .berita-date {
-  color: #5D4037;
-  font-weight: 500;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.8);
+  color: #3E2723;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.85);
+  font-size: 1.05rem;
 }
 
 .read-more {
