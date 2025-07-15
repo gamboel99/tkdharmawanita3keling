@@ -142,7 +142,7 @@ h1, h2, h3 {
   text-align: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s, background-color 0.3s;
-  color: #4E342E;
+  color: #212121;
 }
 
 .fasilitas-card:hover {
@@ -183,13 +183,13 @@ h1, h2, h3 {
   position: absolute;
   bottom: 0;
   background: rgba(255, 152, 0, 0.95);
-  color: #FFFDE7;
+  color: #000;
   width: 100%;
   text-align: center;
   padding: 12px 0;
   font-weight: bold;
   font-size: 1.15rem;
-  text-shadow: 2px 2px 3px rgba(0,0,0,0.8);
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
 }
 
 /* Berita */
@@ -199,7 +199,7 @@ h1, h2, h3 {
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   transition: transform 0.3s ease;
-  color: #000000;
+  color: #000;
   padding: 15px;
 }
 
@@ -208,16 +208,16 @@ h1, h2, h3 {
 }
 
 .berita-card h3 {
-  color: #D84315;
-  text-shadow: 2px 2px 4px rgba(255,255,255,0.9);
+  color: #000;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.6);
   font-size: 1.4rem;
 }
 
 .berita-card p,
 .berita-card .berita-date {
-  color: #3E2723;
+  color: #000;
   font-weight: 600;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.85);
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.7);
   font-size: 1.05rem;
 }
 
