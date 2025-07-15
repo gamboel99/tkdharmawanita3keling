@@ -19,7 +19,7 @@ body {
 h1, h2, h3 {
   color: #A1887F;
   margin-bottom: 10px;
-  text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+  text-shadow: 2px 2px 3px rgba(255,255,255,0.8);
 }
 
 .section-title {
@@ -28,6 +28,19 @@ h1, h2, h3 {
   margin-bottom: 30px;
   color: #FF7043;
   text-shadow: 2px 2px 3px rgba(255,255,255,0.9);
+}
+
+/* Tambahan Efek Kartun */
+.fasilitas-card, .berita-card, .galeri-item, .footer-section, .hero, .btn {
+  border: 3px solid #FFCC80;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px #FFB74D;
+  transition: all 0.3s ease-in-out;
+}
+
+.fasilitas-card:hover, .berita-card:hover, .galeri-item:hover, .btn:hover {
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  transform: translateY(-5px) scale(1.02);
 }
 
 /* Navbar */
@@ -41,7 +54,8 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-bottom: 4px solid #FFCC80;
 }
 
 .logo-container {
@@ -108,14 +122,14 @@ h1, h2, h3 {
   font-size: 1.1rem;
   text-decoration: none;
   transition: all 0.3s;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .btn:hover {
   background-color: #FF8F00;
   color: white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transform: translateY(-3px) scale(1.05);
 }
 
 .btn::after {
@@ -134,22 +148,6 @@ h1, h2, h3 {
   margin-top: 20px;
 }
 
-.fasilitas-card {
-  background-color: #FFFDE7;
-  border-radius: 10px;
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.3s, background-color 0.3s;
-  color: #212121;
-}
-
-.fasilitas-card:hover {
-  transform: translateY(-5px);
-  background-color: #FFF59D;
-}
-
 .fasilitas-card i {
   font-size: 2rem;
   margin-bottom: 10px;
@@ -161,12 +159,6 @@ h1, h2, h3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
-}
-
-.galeri-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px;
 }
 
 .galeri-item img {
