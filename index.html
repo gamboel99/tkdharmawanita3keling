@@ -1,92 +1,56 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TK Dharmawanita III Desa Keling</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="logo-container">
-      <img src="images/logo.png" alt="Logo TK" class="logo" />
-      <div>
-        <h1>TK Dharmawanita III</h1>
-        <p>Desa Keling</p>
-      </div>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Beranda</a></li>
-      <li><a href="profil.html">Profil</a></li>
-      <li><a href="prestasi.html">Prestasi</a></li>
-      <li><a href="kegiatan.html">Kegiatan</a></li>
-      <li><a href="berita.html">Berita</a></li>
-      <li><a href="pengumuman.html">Pengumuman</a></li>
-      <li><a href="link.html">Link</a></li>
-      <li><a href="alumni.html">Alumni</a></li>
-      <li><a href="galeri.html">Galeri</a></li>
-    </ul>
-    <div class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero">
-    <div class="hero-content">
-      <h2>Selamat Datang di</h2>
-      <h1>TK Dharmawanita III Desa Keling</h1>
-      <p>Tempat bermain dan belajar yang menyenangkan untuk buah hati Anda</p>
-      <a href="profil.html" class="btn">Tentang Kami</a>
-    </div>
-  </section>
-
-  <!-- Info Section -->
-  <section class="info-section fasilitas-container">
-    <div class="fasilitas-card">
-      <i class="fas fa-child"></i>
-      <h3>Pendidikan Berkualitas</h3>
-      <p>Metode pembelajaran menyenangkan untuk anak usia dini</p>
-    </div>
-    <div class="fasilitas-card">
-      <i class="fas fa-users"></i>
-      <h3>Guru Berpengalaman</h3>
-      <p>Tenaga pendidik yang sabar dan profesional</p>
-    </div>
-    <div class="fasilitas-card">
-      <i class="fas fa-seedling"></i>
-      <h3>Lingkungan Nyaman</h3>
-      <p>Area bermain yang aman dan fasilitas lengkap</p>
-    </div>
+    <h2>Selamat Datang di</h2>
+    <h1>TK Dharmawanita III Desa Keling</h1>
+    <p>Tempat bermain dan belajar yang menyenangkan untuk buah hati Anda</p>
+    <a href="profil.html" class="btn">Tentang Kami</a>
   </section>
 
   <!-- Berita Terkini -->
   <section class="berita-section">
     <h2 class="section-title">Berita Terkini</h2>
-    <div class="galeri-grid">
-      <div class="galeri-item">
-        <img src="images/berita1.jpg" alt="Berita 1" />
-        <div class="overlay">
-          <p>Penerimaan Siswa Baru 2024</p>
+    <div class="berita-container">
+      <article class="berita-card popup-trigger">
+        <img src="images/berita1.jpg" alt="Berita 1">
+        <div class="berita-content">
+          <h3>Penerimaan Siswa Baru 2024</h3>
+          <p class="berita-date"><i class="far fa-calendar-alt"></i> 15 Juni 2024</p>
+          <p>Pendaftaran siswa baru tahun ajaran 2024/2025 telah dibuka...</p>
+          <a href="#" class="read-more">Baca Selengkapnya</a>
+          <div class="popup-content" style="display: none;">
+            <h2>Penerimaan Siswa Baru 2024</h2>
+            <p>Informasi lengkap mengenai pendaftaran, syarat, jadwal, dan tata cara masuk TK Dharmawanita III Desa Keling...</p>
+            <img src="images/berita1.jpg" style="max-width:100%;">
+          </div>
         </div>
-      </div>
-      <div class="galeri-item">
-        <img src="images/berita2.jpg" alt="Berita 2" />
-        <div class="overlay">
-          <p>Gebyar Hari Anak Nasional</p>
-        </div>
-      </div>
-      <div class="galeri-item">
-        <img src="images/berita3.jpg" alt="Berita 3" />
-        <div class="overlay">
-          <p>Kunjungan Edukasi ke Kebun Binatang</p>
-        </div>
-      </div>
+      </article>
     </div>
-    <div style="text-align:center; margin-top:20px;">
-      <a href="berita.html" class="btn">Lihat Semua Berita</a>
+  </section>
+
+  <!-- Galeri -->
+  <section class="galeri-section">
+    <h2 class="section-title">Galeri Kegiatan</h2>
+    <div class="galeri-container">
+      <div class="galeri-item popup-trigger">
+        <img src="images/galeri1.jpg" alt="Kegiatan 1">
+        <div class="overlay">Senam Ceria</div>
+        <div class="popup-content" style="display: none;">
+          <h2>Senam Ceria</h2>
+          <p>Kegiatan senam pagi bersama anak-anak dengan iringan lagu ceria.</p>
+          <img src="images/galeri1.jpg" style="max-width:100%;">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -95,7 +59,7 @@
     <div class="footer-container">
       <div class="footer-section">
         <h3>Kontak Kami</h3>
-        <p><i class="fas fa-map-marker-alt"></i> Jl. Desa No. 123, Kecamatan, Kabupaten</p>
+        <p><i class="fas fa-map-marker-alt"></i> Jl. Desa No. 123, Keling, Kediri</p>
         <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
         <p><i class="fas fa-envelope"></i> tk.dharmawanita3@example.com</p>
       </div>
@@ -120,9 +84,41 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 TK Dharmawanita III Desa Keling. Developed by <a href="#">CV. Mitra Utama Consultindo</a></p>
+      <p>&copy; 2025 TK Dharmawanita III Desa Keling. Developed by CV. Mitra Utama Consultindo</p>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+
+  <!-- Modal Popup -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script>
+    const modal = document.getElementById("modal");
+    const modalBody = document.getElementById("modal-body");
+    const closeBtn = document.querySelector(".close-btn");
+
+    document.querySelectorAll(".popup-trigger").forEach(item => {
+      item.addEventListener("click", function () {
+        const content = this.querySelector(".popup-content").innerHTML;
+        modalBody.innerHTML = content;
+        modal.style.display = "block";
+      });
+    });
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+
 </body>
 </html>
