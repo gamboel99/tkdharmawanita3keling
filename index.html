@@ -1,191 +1,136 @@
-/* Umum */
-body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #E3F2FD;
-  background-image: url('../images/pattern-batik-anak.jpg');
-  background-size: 120px;
-  background-repeat: repeat;
-  color: #0D47A1;
-  line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TK Dharmawanita III Desa Keling</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo TK" class="logo">
+            <div>
+                <h1>TK Dharmawanita III</h1>
+                <p>Desa Keling</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Beranda</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="prestasi.html">Prestasi</a></li>
+            <li><a href="kegiatan.html">Kegiatan</a></li>
+            <li><a href="berita.html">Berita</a></li>
+            <li><a href="pengumuman.html">Pengumuman</a></li>
+            <li><a href="link.html">Link</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+        </ul>
+    </nav>
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
-}
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Selamat Datang di</h2>
+            <h1>TK Dharmawanita III Desa Keling</h1>
+            <p>Tempat bermain dan belajar yang menyenangkan untuk buah hati Anda</p>
+            <a href="profil.html" class="btn">Tentang Kami</a>
+        </div>
+    </section>
 
-h1, h2, h3 {
-  color: #0D47A1;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
-}
+    <!-- Info Section -->
+    <section class="info-section container">
+        <div class="fasilitas-container">
+            <div class="fasilitas-card">
+                <i class="fas fa-child"></i>
+                <h3>Pendidikan Berkualitas</h3>
+                <p>Metode pembelajaran menyenangkan untuk anak usia dini</p>
+            </div>
+            <div class="fasilitas-card">
+                <i class="fas fa-users"></i>
+                <h3>Guru Berpengalaman</h3>
+                <p>Tenaga pendidik yang sabar dan profesional</p>
+            </div>
+            <div class="fasilitas-card">
+                <i class="fas fa-seedling"></i>
+                <h3>Lingkungan Nyaman</h3>
+                <p>Area bermain yang aman dan fasilitas lengkap</p>
+            </div>
+        </div>
+    </section>
 
-.section-title {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 30px;
-  color: #1565C0;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
-}
+    <!-- Berita Terkini -->
+    <section class="container">
+        <h2 class="section-title">Berita Terkini</h2>
+        <div class="galeri-grid">
+            <div class="galeri-item">
+                <img src="images/berita1.jpg" alt="Berita 1">
+                <div class="overlay">Penerimaan Siswa Baru 2024</div>
+            </div>
+            <div class="galeri-item">
+                <img src="images/berita2.jpg" alt="Berita 2">
+                <div class="overlay">Gebyar Hari Anak Nasional</div>
+            </div>
+            <div class="galeri-item">
+                <img src="images/berita3.jpg" alt="Berita 3">
+                <div class="overlay">Kunjungan Edukasi ke Kebun Binatang</div>
+            </div>
+        </div>
+    </section>
 
-/* Navbar */
-.navbar {
-  background-color: #1976D2;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 24px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
+    <!-- Galeri -->
+    <section class="container">
+        <h2 class="section-title">Galeri Kegiatan</h2>
+        <div class="galeri-grid">
+            <div class="galeri-item">
+                <img src="images/galeri1.jpg" alt="Senam Ceria">
+                <div class="overlay">Senam Ceria</div>
+            </div>
+            <div class="galeri-item">
+                <img src="images/galeri2.jpg" alt="Lomba Mewarnai">
+                <div class="overlay">Lomba Mewarnai</div>
+            </div>
+            <div class="galeri-item">
+                <img src="images/galeri3.jpg" alt="Pembelajaran Outdoor">
+                <div class="overlay">Pembelajaran Outdoor</div>
+            </div>
+        </div>
+    </section>
 
-.navbar .logo {
-  height: 50px;
-  margin-right: 15px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  padding: 0;
-  margin: 0;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.nav-links li a:hover,
-.nav-links li a.active {
-  color: #FFEB3B;
-}
-
-/* Hero */
-.hero {
-  background: linear-gradient(rgba(13, 71, 161, 0.7), rgba(30, 136, 229, 0.6)), url('../images/anak-hero.jpg') center/cover no-repeat;
-  color: white;
-  padding: 80px 20px 60px;
-  text-align: center;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
-}
-
-.hero h1 {
-  font-size: 2.8rem;
-  margin-bottom: 10px;
-}
-
-.hero h2 {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.btn {
-  background-color: #FFEB3B;
-  color: #0D47A1;
-  padding: 12px 28px;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 1.1rem;
-  text-decoration: none;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background-color: #FFF176;
-  color: #0D47A1;
-  transform: translateY(-3px);
-}
-
-/* Informasi Cards */
-.info-section {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 40px;
-  padding: 40px 20px;
-  background-color: #E1F5FE;
-}
-
-.info-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  padding: 25px;
-  text-align: center;
-  width: 300px;
-  transition: 0.3s;
-  color: #0D47A1;
-}
-
-.info-card:hover {
-  transform: translateY(-5px);
-}
-
-.info-card i {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: #1565C0;
-}
-
-/* Footer */
-.footer {
-  background-color: #0D47A1;
-  color: white;
-  padding: 40px 20px 20px;
-  margin-top: 50px;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
-}
-
-.footer-section h3 {
-  margin-bottom: 10px;
-  color: #FFEB3B;
-}
-
-.footer-section p,
-.footer-section ul,
-.footer-section a {
-  color: #E3F2FD;
-  font-size: 0.95rem;
-  text-decoration: none;
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 20px;
-  border-top: 1px solid rgba(255,255,255,0.2);
-  padding-top: 10px;
-  font-size: 0.9rem;
-}
-
-.social-media a {
-  color: white;
-  margin-right: 10px;
-  font-size: 1.2rem;
-  transition: color 0.3s;
-}
-
-.social-media a:hover {
-  color: #FFEB3B;
-}
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Kontak Kami</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Desa No. 123, Keling, Kepung, Kediri</p>
+                <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+                <p><i class="fas fa-envelope"></i> tk.dharmawanita3@example.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Jam Operasional</h3>
+                <p>Senin - Jumat: 07.30 - 14.00 WIB</p>
+                <p>Sabtu: 08.00 - 11.00 WIB</p>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Link Cepat</h3>
+                <ul>
+                    <li><a href="profil.html">Profil Sekolah</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="pengumuman.html">Pengumuman</a></li>
+                    <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 TK Dharmawanita III Desa Keling. Developed by CV. Mitra Utama Consultindo</p>
+        </div>
+    </footer>
+</body>
+</html>
