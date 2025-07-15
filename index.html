@@ -11,44 +11,66 @@
 
   <!-- Hero -->
   <section class="hero">
-    <h2>Selamat Datang di</h2>
-    <h1>TK Dharmawanita III Desa Keling</h1>
-    <p>Tempat bermain dan belajar yang menyenangkan untuk buah hati Anda</p>
-    <a href="profil.html" class="btn">Tentang Kami</a>
+    <div class="container">
+      <h2>Selamat Datang di</h2>
+      <h1>TK Dharmawanita III Desa Keling</h1>
+      <p>Tempat bermain dan belajar yang menyenangkan untuk buah hati Anda</p>
+      <a href="profil.html" class="btn">Tentang Kami</a>
+    </div>
   </section>
 
   <!-- Berita Terkini -->
   <section class="berita-section">
-    <h2 class="section-title">Berita Terkini</h2>
-    <div class="berita-container">
-      <article class="berita-card popup-trigger">
-        <img src="images/berita1.jpg" alt="Berita 1">
-        <div class="berita-content">
-          <h3>Penerimaan Siswa Baru 2024</h3>
-          <p class="berita-date"><i class="far fa-calendar-alt"></i> 15 Juni 2024</p>
-          <p>Pendaftaran siswa baru tahun ajaran 2024/2025 telah dibuka...</p>
-          <a href="#" class="read-more">Baca Selengkapnya</a>
-          <div class="popup-content" style="display: none;">
-            <h2>Penerimaan Siswa Baru 2024</h2>
-            <p>Informasi lengkap mengenai pendaftaran, syarat, jadwal, dan tata cara masuk TK Dharmawanita III Desa Keling...</p>
-            <img src="images/berita1.jpg" style="max-width:100%;">
+    <div class="container">
+      <h2 class="section-title">Berita Terkini</h2>
+      <div class="berita-container">
+        <article class="berita-card">
+          <img src="images/berita1.jpg" alt="Berita 1">
+          <div class="berita-content">
+            <h3>Penerimaan Siswa Baru 2024</h3>
+            <p class="berita-date"><i class="far fa-calendar-alt"></i> 15 Juni 2024</p>
+            <p>Pendaftaran siswa baru tahun ajaran 2024/2025 telah dibuka...</p>
+            <a href="berita-detail.html" class="read-more">Baca Selengkapnya</a>
           </div>
-        </div>
-      </article>
+        </article>
+        <article class="berita-card">
+          <img src="images/berita2.jpg" alt="Berita 2">
+          <div class="berita-content">
+            <h3>Gebyar Hari Anak Nasional</h3>
+            <p class="berita-date"><i class="far fa-calendar-alt"></i> 23 Juli 2024</p>
+            <p>Berbagai lomba dan kegiatan seru memeriahkan Hari Anak Nasional...</p>
+            <a href="berita-detail.html" class="read-more">Baca Selengkapnya</a>
+          </div>
+        </article>
+        <article class="berita-card">
+          <img src="images/berita3.jpg" alt="Berita 3">
+          <div class="berita-content">
+            <h3>Kunjungan Edukasi ke Kebun Binatang</h3>
+            <p class="berita-date"><i class="far fa-calendar-alt"></i> 5 Agustus 2024</p>
+            <p>Anak-anak TK Dharmawanita III melakukan kunjungan edukasi...</p>
+            <a href="berita-detail.html" class="read-more">Baca Selengkapnya</a>
+          </div>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- Galeri -->
   <section class="galeri-section">
-    <h2 class="section-title">Galeri Kegiatan</h2>
-    <div class="galeri-container">
-      <div class="galeri-item popup-trigger">
-        <img src="images/galeri1.jpg" alt="Kegiatan 1">
-        <div class="overlay">Senam Ceria</div>
-        <div class="popup-content" style="display: none;">
-          <h2>Senam Ceria</h2>
-          <p>Kegiatan senam pagi bersama anak-anak dengan iringan lagu ceria.</p>
-          <img src="images/galeri1.jpg" style="max-width:100%;">
+    <div class="container">
+      <h2 class="section-title">Galeri Kegiatan</h2>
+      <div class="galeri-container">
+        <div class="galeri-item">
+          <img src="images/galeri1.jpg" alt="Kegiatan 1">
+          <div class="overlay">Senam Ceria</div>
+        </div>
+        <div class="galeri-item">
+          <img src="images/galeri2.jpg" alt="Kegiatan 2">
+          <div class="overlay">Lomba Mewarnai</div>
+        </div>
+        <div class="galeri-item">
+          <img src="images/galeri3.jpg" alt="Kegiatan 3">
+          <div class="overlay">Pembelajaran Outdoor</div>
         </div>
       </div>
     </div>
@@ -87,38 +109,6 @@
       <p>&copy; 2025 TK Dharmawanita III Desa Keling. Developed by CV. Mitra Utama Consultindo</p>
     </div>
   </footer>
-
-  <!-- Modal Popup -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <div id="modal-body"></div>
-    </div>
-  </div>
-
-  <script>
-    const modal = document.getElementById("modal");
-    const modalBody = document.getElementById("modal-body");
-    const closeBtn = document.querySelector(".close-btn");
-
-    document.querySelectorAll(".popup-trigger").forEach(item => {
-      item.addEventListener("click", function () {
-        const content = this.querySelector(".popup-content").innerHTML;
-        modalBody.innerHTML = content;
-        modal.style.display = "block";
-      });
-    });
-
-    closeBtn.onclick = function () {
-      modal.style.display = "none";
-    };
-
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-  </script>
 
 </body>
 </html>
